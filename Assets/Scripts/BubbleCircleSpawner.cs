@@ -20,11 +20,17 @@ public class BubbleCircleSpawner : MonoBehaviour
                 0,
                 Mathf.Cos(i * (Mathf.PI * 2 / howMany)) * amplitude
             );
-            
-            
-            bubblyMoves bubblyMovesComponent = roomBubbleL1.GetComponentInChildren<bubblyMoves>();
+            bubblyMoves bubblyMovesComponentL1 = roomBubbleL1.GetComponentInChildren<bubblyMoves>();
+            bubblyMovesComponentL1.y_speed = Random.value * 0.5f + 0.1f;
 
-            bubblyMovesComponent.y_speed = Random.value * 0.5f + 0.1f;
+            GameObject roomBubbleL2 = Instantiate(roomBubblePrefab);
+            roomBubbleL2.transform.position = new Vector3(
+                Mathf.Sin(i * (Mathf.PI * 2 / howMany)) * amplitude,
+                -3,
+                Mathf.Cos(i * (Mathf.PI * 2 / howMany)) * amplitude
+            );
+            bubblyMoves bubblyMovesComponentL2 = roomBubbleL2.GetComponentInChildren<bubblyMoves>();
+            bubblyMovesComponentL2.y_speed = Random.value * 0.5f + 0.1f;
         }
     }
 
