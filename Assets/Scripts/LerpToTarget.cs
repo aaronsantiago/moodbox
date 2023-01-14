@@ -6,7 +6,7 @@ public class LerpToTarget : MonoBehaviour
 {
 
     public Transform Target;
-    public float LerpAlpha = 0.5f;
+    public float LerpAlpha = 0.2f;
 
     // Smoothing rate dictates the proportion of source remaining after one second
     //

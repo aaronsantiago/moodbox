@@ -19,9 +19,12 @@ public class BubbleCircleSpawner : MonoBehaviour
                 Mathf.Sin(i * (Mathf.PI * 2 / howMany)) * amplitude,
                 0,
                 Mathf.Cos(i * (Mathf.PI * 2 / howMany)) * amplitude
-            );  
+            );
+            
+            
             bubblyMoves bubblyMovesComponent = roomBubbleL1.GetComponentInChildren<bubblyMoves>();
-            bubblyMovesComponent.y_speed = Random.value * 5f;
+
+            bubblyMovesComponent.y_speed = Random.value * 0.5f + 0.1f;
         }
     }
 

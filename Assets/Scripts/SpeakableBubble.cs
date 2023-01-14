@@ -7,6 +7,8 @@ public class SpeakableBubble : MonoBehaviour
     bool bubbleGrabbed = false;
 
     OVRGrabbable bubbleGrabbableComponent;
+
+    public List<MonoBehaviour> ToDisable;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,10 @@ public class SpeakableBubble : MonoBehaviour
         if (!bubbleGrabbed && bubbleGrabbableComponent.isGrabbed)
         {
             bubbleGrabbed = true;
+            foreach(MonoBehaviour toDisable in ToDisable)
+            {
+                toDisable.enabled = false;
+            }
         }
 
         if (bubbleGrabbed && !bubbleGrabbableComponent.isGrabbed)
