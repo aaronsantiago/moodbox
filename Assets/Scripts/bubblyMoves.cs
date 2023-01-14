@@ -9,13 +9,14 @@ public class bubblyMoves : MonoBehaviour
 	public float frequency = 1.0f;
 	public float maxHeight = 3.0f;
 	public float minHeight = 0.0f;
+	public float phase = 0.0f;
 
 	// Update is called once per frame
 	void Update()
     {
 		transform.localPosition = new Vector3(
-			Mathf.Sin(frequency* Time.time) * amplitude,
-			transform.localPosition.y + (Time.deltaTime * y_speed),
+			Mathf.Sin(phase + frequency* Time.time) * amplitude,
+			transform.localPosition.y + (phase + Time.deltaTime * y_speed),
 			0
 			);
 
