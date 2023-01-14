@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OrderedSequence : SequenceItem
 {
-    private void Update()
+    protected virtual void Update()
     {
         if (IsActive)
         {
