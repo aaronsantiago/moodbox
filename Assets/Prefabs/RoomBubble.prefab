@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 250655322800844713}
   - component: {fileID: 250655322800844712}
   - component: {fileID: 250655322800844715}
+  - component: {fileID: 2115156607704369178}
+  - component: {fileID: 8114180685351910004}
+  - component: {fileID: 8159474956560617954}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -108,11 +111,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee301b4f1b7ed0e4991080940a2e8cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 1
+  amplitude: 0.3
   y_speed: 1
-  frequency: 1
+  frequency: 0.7
   maxHeight: 3
   minHeight: -3
+--- !u!114 &2115156607704369178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250655322800844717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+--- !u!114 &8114180685351910004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250655322800844717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304db852825d8ea49b7c24b449c030b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToDisable:
+  - {fileID: 250655322800844715}
+--- !u!54 &8159474956560617954
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250655322800844717}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &250655324202623224
 GameObject:
   m_ObjectHideFlags: 0

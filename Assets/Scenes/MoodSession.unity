@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomBubblePrefab: {fileID: 250655324202623224, guid: 9daa94ce1a53ee34eb8abc2a4b4817cb, type: 3}
-  howMany: 15
+  howMany: 25
   amplitude: 1
 --- !u!1 &843339569
 GameObject:
@@ -2172,20 +2172,17 @@ MonoBehaviour:
   IsActive: 0
   ActivateOnStart: 0
   clips:
-  - {fileID: 8300000, guid: 5f1ca698528d13641b144a04dc7f0284, type: 3}
-  - {fileID: 8300000, guid: 8b7d7294fd7bb064e9ef2edaebcceb71, type: 3}
-  - {fileID: 8300000, guid: 730d666271cf2904b87c767df665456c, type: 3}
-  - {fileID: 8300000, guid: 69d190f9639bb8b4d99355c6e04768cf, type: 3}
-  - {fileID: 8300000, guid: 2dffae0c772c1494dad149b7cb660d83, type: 3}
-  - {fileID: 8300000, guid: a0fa9a49e9e690c46941606b23567d62, type: 3}
-  - {fileID: 8300000, guid: 1fb43a83e75ccb245b84126d19070e04, type: 3}
-  - {fileID: 8300000, guid: d7e375c89ce3be844904e39adbe1de7a, type: 3}
-  - {fileID: 8300000, guid: 783db1672a0e70540be1a38efb05a0e7, type: 3}
-  - {fileID: 8300000, guid: a7a5fddb2797c8b48b62b42cfcc514ef, type: 3}
-  - {fileID: 8300000, guid: cdf4fde1385b36e478c808f6947a5641, type: 3}
-  - {fileID: 8300000, guid: 0ec2537679ef8d442956b5cee8aad4bf, type: 3}
-  - {fileID: 8300000, guid: 5b3fadc45cbb2fb4ab4790f7455cf6f5, type: 3}
-  - {fileID: 8300000, guid: 636a1bcbf2e9f4f48882ae342220976e, type: 3}
+  - {fileID: 8300000, guid: f2f4879a1c08573409c4193083ef504a, type: 3}
+  - {fileID: 8300000, guid: e71a57cf86123f24cb65e11ecd8afa9e, type: 3}
+  - {fileID: 8300000, guid: d4a3742b14caf6543be95878ddf40e4e, type: 3}
+  - {fileID: 8300000, guid: b843e1fefa5eb5d4384e07d46eff430b, type: 3}
+  - {fileID: 8300000, guid: 322de634f8ed4db4eab1f4ca2a0378e4, type: 3}
+  - {fileID: 8300000, guid: 039924b012b3d034dba1d4c4976e4c0c, type: 3}
+  - {fileID: 8300000, guid: ce6a2a41823f3604da0ecfa63167d73e, type: 3}
+  - {fileID: 8300000, guid: f4237f63aaae93d48bafd1607bd6bb0f, type: 3}
+  - {fileID: 8300000, guid: 3a91f0ea5fc1bee499da3f9265b5c73e, type: 3}
+  - {fileID: 8300000, guid: d4f172e8dd600ef4fa09a8f0f70513f0, type: 3}
+  - {fileID: 8300000, guid: 227213fdb796b4a418450fa3553e642b, type: 3}
   audioSource: {fileID: 1826934334}
 --- !u!114 &2135194302
 MonoBehaviour:
