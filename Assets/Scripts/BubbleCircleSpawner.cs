@@ -21,7 +21,7 @@ public class BubbleCircleSpawner : MonoBehaviour
                 Mathf.Cos(i * (Mathf.PI * 2 / howMany)) * amplitude
             );
             bubblyMoves bubblyMovesComponentL1 = roomBubbleL1.GetComponentInChildren<bubblyMoves>();
-            bubblyMovesComponentL1.y_speed = Random.value * 2.5f + 0.1f;
+            bubblyMovesComponentL1.y_speed = Random.value * 0.5f + 0.1f;
             bubblyMovesComponentL1.frequency  = Random.value *1.5f + 0.1f;
             bubblyMovesComponentL1.amplitude = Random.value * 1.5f + 0.1f;
             bubblyMovesComponentL1.phase = Random.value * 1.5f + 0.1f;
@@ -33,7 +33,7 @@ public class BubbleCircleSpawner : MonoBehaviour
                 Mathf.Cos(i * (Mathf.PI * 2 / howMany)) * amplitude
             );
             bubblyMoves bubblyMovesComponentL2 = roomBubbleL2.GetComponentInChildren<bubblyMoves>();
-            bubblyMovesComponentL2.y_speed = Random.value * 3.5f + 0.1f;
+            bubblyMovesComponentL2.y_speed = Random.value * 0.5f + 0.1f;
             bubblyMovesComponentL2.frequency = Random.value * 4.5f + 0.1f;
             bubblyMovesComponentL2.amplitude = Random.value * 1.5f + 0.1f;
             bubblyMovesComponentL2.phase = Random.value * 1.5f + 0.1f;
