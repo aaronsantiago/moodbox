@@ -7,6 +7,14 @@ public class PerlinMove : MonoBehaviour
     public float StartSeed = 1f;
     public Vector3 PerlinScale = new Vector3(1.0f, 1.0f, 1.0f);
     public float Speed = 0.5f;
+    public Vector3 Offset = new Vector3(0, 0, 0);
+
+    public bool Randomize = false;
+
+    void Start()
+    {
+        if (Randomize) StartSeed = Random.value * 10f;
+    }
 
     // Update is called once per frame
     void Update()

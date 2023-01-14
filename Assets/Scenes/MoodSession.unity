@@ -168,10 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &28198670
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,10 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &78644876
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,10 +260,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
+--- !u!1001 &124096863
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.17693573
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.14292385
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.26523623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+      propertyPath: m_Name
+      value: Bubble (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+--- !u!1 &124096864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
+  m_PrefabInstance: {fileID: 124096863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &124096865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124096864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304db852825d8ea49b7c24b449c030b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &180827042
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,13 +785,14 @@ GameObject:
   - component: {fileID: 349667991}
   - component: {fileID: 349667990}
   - component: {fileID: 349667989}
+  - component: {fileID: 349667993}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &349667989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -803,6 +869,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349667993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349667988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287e5bd9b5ace32438fa873c0c88fa1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  LerpAlpha: 0.5
 --- !u!1 &508917115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1054112583220142, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
@@ -909,10 +989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &585440280
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,10 +1035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &594703493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1085,8 @@ MonoBehaviour:
   StartSeed: 6
   PerlinScale: {x: 1, y: 1, z: 1}
   Speed: 0.5
+  Offset: {x: 0, y: 0, z: 0}
+  Randomize: 0
 --- !u!135 &594703496
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1104,7 +1180,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1152,7 +1228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6130075410594394718, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
@@ -1809,6 +1885,8 @@ MonoBehaviour:
   StartSeed: 5
   PerlinScale: {x: 1, y: 1, z: 1}
   Speed: 0.5
+  Offset: {x: 0, y: 0, z: 0}
+  Randomize: 0
 --- !u!135 &843339572
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2200,7 +2278,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2248,7 +2326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6130075410594394718, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
@@ -2326,6 +2404,8 @@ MonoBehaviour:
   StartSeed: 3
   PerlinScale: {x: 1, y: 1, z: 1}
   Speed: 0.5
+  Offset: {x: 0, y: 0, z: 0}
+  Randomize: 0
 --- !u!135 &997068532
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2433,10 +2513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &1067532426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,6 +2563,8 @@ MonoBehaviour:
   StartSeed: 2
   PerlinScale: {x: 1, y: 1, z: 1}
   Speed: 0.5
+  Offset: {x: 0, y: 0, z: 0}
+  Randomize: 0
 --- !u!135 &1067532429
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2753,10 +2832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1001 &1129213975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2766,7 +2842,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6130075410594394715, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2814,7 +2890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6130075410594394718, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
@@ -2888,10 +2964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &1182633447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3322,6 +3395,8 @@ MonoBehaviour:
   StartSeed: 4
   PerlinScale: {x: 1, y: 1, z: 1}
   Speed: 0.5
+  Offset: {x: 0, y: 0, z: 0}
+  Randomize: 0
 --- !u!135 &1261511357
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3429,10 +3504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &1336862054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,10 +3550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &1385288459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,6 +3600,8 @@ MonoBehaviour:
   StartSeed: 7
   PerlinScale: {x: 1, y: 1, z: 1}
   Speed: 0.5
+  Offset: {x: 0, y: 0, z: 0}
+  Randomize: 0
 --- !u!135 &1385288462
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4126,10 +4197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1001 &1718096311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4298,10 +4366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &1826934331
 GameObject:
   m_ObjectHideFlags: 0
@@ -4490,10 +4555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &1981333455
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,6 +4925,8 @@ MonoBehaviour:
   StartSeed: 1
   PerlinScale: {x: 1, y: 1, z: 1}
   Speed: 0.5
+  Offset: {x: 0, y: 0, z: 0}
+  Randomize: 0
 --- !u!135 &2008789219
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5007,10 +5071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   ActivateOnStart: 0
-  time: 1
-  completionTimeThreshold: 1
-  BubblePrefab: {fileID: 6130075410594394717, guid: c065e9f97d4364b49b76ca1cf34a367b, type: 3}
-  BubbleSpawnLocation: {fileID: 821816684}
+  LerpTargetPrefab: {fileID: 0}
 --- !u!1 &2135194299
 GameObject:
   m_ObjectHideFlags: 0
