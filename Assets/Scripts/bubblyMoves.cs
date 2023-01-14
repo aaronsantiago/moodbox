@@ -13,10 +13,19 @@ public class bubblyMoves : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-		transform.position = new Vector3(Mathf.Sin(frequency* Time.time) * amplitude, transform.position.y + (Time.deltaTime * y_speed), 0);
-		if (transform.position.y > maxHeight)
-        {
-			transform.position = new Vector3(transform.position.x, minHeight, transform.position.y);
+		transform.localPosition = new Vector3(
+			Mathf.Sin(frequency* Time.time) * amplitude,
+			transform.localPosition.y + (Time.deltaTime * y_speed),
+			0
+		);
+
+		if (transform.localPosition.y > maxHeight)
+		{
+			transform.localPosition = new Vector3(
+									transform.localPosition.x,	
+									minHeight,
+									transform.localPosition.y
+								);
 		}
 
     }
