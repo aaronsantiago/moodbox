@@ -17,15 +17,14 @@ public class bubblyMoves : MonoBehaviour
 			Mathf.Sin(frequency* Time.time) * amplitude,
 			transform.localPosition.y + (Time.deltaTime * y_speed),
 			0
-		);
+			);
 
 		if (transform.localPosition.y > maxHeight)
 		{
 			transform.localPosition = new Vector3(
 									transform.localPosition.x,	
 									minHeight,
-									transform.localPosition.y
-								);
+									transform.localPosition.y);
 		}
 
     }

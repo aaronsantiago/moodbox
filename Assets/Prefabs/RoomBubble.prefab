@@ -112,7 +112,7 @@ MonoBehaviour:
   y_speed: 1
   frequency: 1
   maxHeight: 3
-  minHeight: 0
+  minHeight: -3
 --- !u!1 &250655324202623224
 GameObject:
   m_ObjectHideFlags: 0

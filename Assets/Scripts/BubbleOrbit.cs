@@ -13,11 +13,6 @@ public class BubbleOrbit : MonoBehaviour
     public float yFrequency = 1f;
     public float yPhase = 0f;
 
-    //public float ySpeed = 1f;
-
-    //public float maxY = 1f;
-    //public float minY = -1f;
-    // Start is called before the first frame update
     void Start()
     {
     }
@@ -30,11 +25,6 @@ public class BubbleOrbit : MonoBehaviour
             Mathf.Sin(Time.time * yFrequency + yPhase * Mathf.PI * 2) * yAmplitude + orbitTransform.position.y,
             Mathf.Cos(Time.time * frequency + phase * Mathf.PI * 2) * amplitude + orbitTransform.position.z
           );
-
-        //if (transform.position.y > orbitTransform.position.y + maxY)
-        //{
-        //    transform.position = new Vector3(transform.position.x, orbitTransform.position.y + minY, transform.position.z);
-        //}
 
     }
 }
