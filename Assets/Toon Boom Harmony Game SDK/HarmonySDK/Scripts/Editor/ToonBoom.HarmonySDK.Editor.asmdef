@@ -1,0 +1,17 @@
+{
+    "name": "ToonBoom.HarmonySDK.Editor",
+    "references": [
+        "GUID:fb10e62a43f1db8459adb8cd16f0ff38"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

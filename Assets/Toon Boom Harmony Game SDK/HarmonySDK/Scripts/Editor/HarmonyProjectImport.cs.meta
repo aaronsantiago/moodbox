@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 819987e1edc943b4fa1b1fbb06080c5b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Project: {instanceID: 0}
+  - DefaultMaterial: {fileID: 2100000, guid: 459683e483e91c84b9e54f31e0fef25b, type: 2}
+  - ExistingPrefab: {instanceID: 0}
+  - AnimatorGameObject: {instanceID: 0}
+  - RendererGameObject: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

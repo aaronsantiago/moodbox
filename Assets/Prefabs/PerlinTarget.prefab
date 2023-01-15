@@ -46,5 +46,5 @@ MonoBehaviour:
   StartSeed: 1
   PerlinScale: {x: 1, y: 1, z: 1}
   Speed: 0.5
-  Offset: {x: 0, y: 0, z: -2}
+  Offset: {x: -0.035, y: 0.748, z: -3.169}
   Randomize: 1
