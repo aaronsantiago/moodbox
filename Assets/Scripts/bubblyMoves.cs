@@ -16,7 +16,7 @@ public class bubblyMoves : MonoBehaviour
     {
 		transform.localPosition = new Vector3(
 			Mathf.Sin(phase + frequency* Time.time) * amplitude,
-			transform.localPosition.y + (phase + Time.deltaTime * y_speed),
+			transform.localPosition.y + Time.deltaTime * y_speed,
 			0
 			);
 
@@ -25,7 +25,7 @@ public class bubblyMoves : MonoBehaviour
 			transform.localPosition = new Vector3(
 									transform.localPosition.x,	
 									minHeight,
-									transform.localPosition.y);
+									transform.localPosition.z);
 		}
 
     }
