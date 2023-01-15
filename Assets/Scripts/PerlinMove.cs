@@ -20,8 +20,8 @@ public class PerlinMove : MonoBehaviour
     void Update()
     {
         transform.position = Offset + new Vector3(
-            Mathf.PerlinNoise(StartSeed * 100f + 1235f, Time.time * Speed + StartSeed * 12.1523f) * PerlinScale.x,
-            Mathf.PerlinNoise(StartSeed * 400f + 1235f, Time.time * Speed + StartSeed * 12.5223f) * PerlinScale.y,
-            Mathf.PerlinNoise(StartSeed * 700f + 1235f, Time.time * Speed + StartSeed * 12.7523f) * PerlinScale.z);
+            (Mathf.PerlinNoise(StartSeed * 100f + 1235f, Time.time * Speed + StartSeed * 12.1523f) - 0.5f) * PerlinScale.x,
+            (Mathf.PerlinNoise(StartSeed * 400f + 1235f, Time.time * Speed + StartSeed * 12.5223f) - 0.5f) * PerlinScale.y,
+            (Mathf.PerlinNoise(StartSeed * 700f + 1235f, Time.time * Speed + StartSeed * 12.7523f) - 0.5f) * PerlinScale.z);
     }
 }

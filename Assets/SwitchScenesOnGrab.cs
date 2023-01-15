@@ -9,6 +9,7 @@ public class SwitchScenesOnGrab : MonoBehaviour
 
     OVRGrabbable bubbleGrabbableComponent;
     public string NextScene = "";
+    public bool grabbed = false;
 
     void Start()
     {
@@ -20,8 +21,12 @@ public class SwitchScenesOnGrab : MonoBehaviour
 
         if (bubbleGrabbableComponent.isGrabbed)
         {
-            Debug.Log("hi");
+            grabbed = true;
             SceneManager.LoadScene(NextScene);
+        }
+        else if(grabbed)
+        {
+            Destroy(gameObject);
         }
     }
 }

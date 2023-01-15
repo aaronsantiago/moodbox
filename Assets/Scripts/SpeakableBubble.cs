@@ -9,6 +9,7 @@ public class SpeakableBubble : MonoBehaviour
     public bool ForceSatisfy = false;
     public AudioSource GrabSound;
     public AudioSource ReleaseSound;
+    public Vector3 ReleaseScale = new Vector3(0.03f, 0.03f, 0.03f);
 
     public Material GrabbedMaterial;
 
@@ -40,6 +41,7 @@ public class SpeakableBubble : MonoBehaviour
             ForceSatisfy = false;
             bubbleGrabbableComponent.enabled = false;
             bubbleGrabbed = false;
+            transform.localScale = ReleaseScale;
             if (BubbleTrigger.currentInstance != null && BubbleTrigger.currentInstance.enabled)
             {
                 GetComponent<MeshRenderer>().material = GrabbedMaterial;
