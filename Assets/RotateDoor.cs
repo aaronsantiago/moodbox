@@ -2,25 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateDoor : MonoBehaviour
+public class RotateDoor : SequenceItem
 {
 
     public GameObject objectToRotate;
-    public float rotationSpeed = 33f;
+    public float rotationAmount = 22f;
+    public float rotationTime = 1f;
+    float totalTime = 0f;
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.R))
+        if (IsActive)
         {
-            objectToRotate.transform.Rotate(0f, 0f,-(rotationSpeed * Time.deltaTime));
+            totalTime += Time.deltaTime;
+            objectToRotate.transform.Rotate(0f, 0f, -(rotationAmount/rotationTime * Time.deltaTime));
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected override void OnActivate()
     {
-        // set the z angle to to 0
-        Debug.Log("Ouch, I clashed");
+        totalTime = 0f;
     }
 
-
+    public override bool IsResponseSatisfied()
+    {
+        return totalTime / rotationTime > 1f;
+    }
 }
