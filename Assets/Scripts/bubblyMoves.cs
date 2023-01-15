@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class bubblyMoves : MonoBehaviour
 {
-	public float amplitude = 1.0f;
+	public float amplitude = 0.5f;
 	public float y_speed = 0.5f;
-	public float frequency = 1.0f;
+	public float frequency = 0.5f;
 	public float maxHeight = 3.0f;
 	public float minHeight = 0.0f;
 	public float phase = 0.0f;

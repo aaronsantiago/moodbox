@@ -5,8 +5,8 @@ using UnityEngine;
 public class BubbleCircleSpawner : MonoBehaviour
 {
     public GameObject roomBubblePrefab;
-    public float howMany = 10;
-    public float amplitude = 1f;
+    public float howMany = 30;
+    public float amplitude = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +34,8 @@ public class BubbleCircleSpawner : MonoBehaviour
             );
             bubblyMoves bubblyMovesComponentL2 = roomBubbleL2.GetComponentInChildren<bubblyMoves>();
             bubblyMovesComponentL2.y_speed = Random.value * 0.5f + 0.1f;
-            bubblyMovesComponentL2.frequency = Random.value * 4.5f + 0.1f;
-            bubblyMovesComponentL2.amplitude = Random.value * 1.5f + 0.1f;
+            bubblyMovesComponentL2.frequency = Random.value * 0.5f + 0.1f;
+            bubblyMovesComponentL2.amplitude = Random.value * 0.5f + 0.01f;
             bubblyMovesComponentL2.phase = Random.value * 1.5f + 0.1f;
         }
     }
