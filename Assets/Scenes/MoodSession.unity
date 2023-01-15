@@ -1711,6 +1711,83 @@ MonoBehaviour:
   yAmplitude: 1
   yFrequency: 0.2
   yPhase: 0
+--- !u!1001 &1592231987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575823318598014232, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642543408401252001, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935776610161530159, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_Name
+      value: Princess
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421725657328782871, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 459683e483e91c84b9e54f31e0fef25b, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10cd8a0e64d604093ad9e0dabeca7078, type: 3}
 --- !u!1 &1643431640
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,20 +2157,11 @@ MonoBehaviour:
   IsActive: 0
   ActivateOnStart: 0
   clips:
-  - {fileID: 8300000, guid: 13ffc536db3dd4b45b26945812ef3939, type: 3}
-  - {fileID: 8300000, guid: ff0574c1f34d7a54ba5699951bf6adc8, type: 3}
-  - {fileID: 8300000, guid: 96b71a471f9759b4287bcfec48fd510c, type: 3}
-  - {fileID: 8300000, guid: df96846a39f904147a21d22d3f92d4e0, type: 3}
-  - {fileID: 8300000, guid: d6b83acf3da1f6e4e97b4b52fc8bac8d, type: 3}
-  - {fileID: 8300000, guid: 71356e10aa49b6349a238c47390e4cd2, type: 3}
-  - {fileID: 8300000, guid: f5f7a5aaf85b473418e43fcf027bf1bf, type: 3}
-  - {fileID: 8300000, guid: 730a22c1c18ab7f4184de2f7c9a6b3fa, type: 3}
-  - {fileID: 8300000, guid: e93f5df84abe8c3418cf4eec2f23721a, type: 3}
   - {fileID: 8300000, guid: 24d8cc0c354236b44b850837fa270e89, type: 3}
-  - {fileID: 8300000, guid: 7c0b56a8c6cdc6c49b0ab2e0b0701c8b, type: 3}
-  - {fileID: 8300000, guid: 8893f45a74671054eaa1d41dae60eab3, type: 3}
-  - {fileID: 8300000, guid: 71610856f718dfa4a9a6baa5a4e61bb6, type: 3}
-  - {fileID: 8300000, guid: 30f1acdb4002d114bac99df04a810cbc, type: 3}
+  - {fileID: 8300000, guid: 24d8cc0c354236b44b850837fa270e89, type: 3}
+  - {fileID: 8300000, guid: 24d8cc0c354236b44b850837fa270e89, type: 3}
+  - {fileID: 8300000, guid: 24d8cc0c354236b44b850837fa270e89, type: 3}
+  - {fileID: 8300000, guid: 24d8cc0c354236b44b850837fa270e89, type: 3}
   audioSource: {fileID: 1826934334}
 --- !u!114 &2135194302
 MonoBehaviour:
